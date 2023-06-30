@@ -1,0 +1,25 @@
+.explorer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3F3F3;
+}
+
+.explorer h1{
+    @include balise_h1();
+    width:75%;
+    text-align:center;
+    margin:10% 0% 0% 0%;
+}
+
+.explorer h3{
+    @include balise_h3();
+    text-align: center;
+    margin:5% 0% 0% 0%;
+}
+
+.explorer__submit{
+    @include button();
+    width:60%;
+}

@@ -1,0 +1,30 @@
+@import "./utils/_variables"; 
+
+  
+/****** General ***********/
+* {
+    font-family: $font-family; 
+}
+
+:root {
+    --main-color: #{$primary-color};
+    --main-bg-color: #FFFFFF;
+    --filter-bg-color: #FFFFFF;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin:0px;
+    background-color: #F3F3F3;
+}
+
+.main-container {
+    width: 100%;
+ }
+
+  @import "./utils/_mixins";
+  @import "./layout/_header"; 
+  @import "./layout/_explorer";
+  @import "./layout/fonctionnement";
+  @import "./layout/restaurants";
