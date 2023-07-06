@@ -4,35 +4,64 @@
     align-items: flex-start;
     padding: 50px 5% 40px 5%;
     background-color: #FFFFFF;
+
+    &__choix{
+        display:flex;
+        flex-direction: row;
+        justify-content:flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+        background-color: #F3F3F3;
+        border-radius: 20px;
+        margin: 2% 0% 2% 0%;
+        & i{
+            margin:0% 8% 0% 0%;
+            color:$primary-color;
+        }
+
+        & img{
+            margin:0% 8% 0% 0%;
+        }
+        & h2{
+            @include balise_h2();
+            margin:6% 0% 6% 0%;
+            
+        }
+    }
+
+    & a{
+        text-decoration: none;
+        width:100%;
+     }
 }
- .fonctionnement a{
-    text-decoration: none;
-    width:100%;
- }
+//  .fonctionnement a{
+//     text-decoration: none;
+//     width:100%;
+//  }
 
-.fonctionnement__choix{
-    display:flex;
-    flex-direction: row;
-    justify-content:flex-start;
-    align-items: center;
-    flex-wrap: nowrap;
-    background-color: #F3F3F3;
-    border-radius: 20px;
-    margin: 2% 0% 2% 0%;
-}
+// .fonctionnement__choix{
+//     display:flex;
+//     flex-direction: row;
+//     justify-content:flex-start;
+//     align-items: center;
+//     flex-wrap: nowrap;
+//     background-color: #F3F3F3;
+//     border-radius: 20px;
+//     margin: 2% 0% 2% 0%;
+// }
 
-.fonctionnement__choix i{
-    margin:0% 8% 0% 0%;
-    color:$primary-color;
-}
+// .fonctionnement__choix i{
+//     margin:0% 8% 0% 0%;
+//     color:$primary-color;
+// }
 
-.fonctionnement__choix img{
-    margin:0% 8% 0% 0%;
-}
+// .fonctionnement__choix img{
+//     margin:0% 8% 0% 0%;
+// }
 
 
-.fonctionnement__choix h2{
-    @include balise_h2();
-    margin:6% 0% 6% 0%;
+// .fonctionnement__choix h2{
+//     @include balise_h2();
+//     margin:6% 0% 6% 0%;
     
-}
+// }

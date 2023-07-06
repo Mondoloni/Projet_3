@@ -26,12 +26,10 @@ body {
   align-items: center;
   background-color: #FFFFFF;
 }
-
 .header img {
   width: 50%;
   margin: 5% 0% 3% 0%;
 }
-
 .header__location {
   display: flex;
   flex-direction: row;
@@ -40,12 +38,10 @@ body {
   width: 100%;
   background: #EAEAEA;
 }
-
 .header__location i {
   color: #000000;
   margin-right: 5%;
 }
-
 .header__location h2 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -61,6 +57,21 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #F3F3F3;
+}
+.explorer__submit {
+  width: 60%;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #9356DC;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  width: 60%;
 }
 
 .explorer h1 {
@@ -86,22 +97,6 @@ body {
   margin: 5% 0% 0% 0%;
 }
 
-.explorer__submit {
-  width: 60%;
-  height: 50px;
-  border-radius: 25px;
-  background-color: #9356DC;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  color: #FFFFFF;
-  margin-top: 5%;
-  margin-bottom: 10%;
-  width: 60%;
-}
-
 .fonctionnement {
   display: flex;
   flex-direction: column;
@@ -109,12 +104,6 @@ body {
   padding: 50px 5% 40px 5%;
   background-color: #FFFFFF;
 }
-
-.fonctionnement a {
-  text-decoration: none;
-  width: 100%;
-}
-
 .fonctionnement__choix {
   display: flex;
   flex-direction: row;
@@ -125,16 +114,13 @@ body {
   border-radius: 20px;
   margin: 2% 0% 2% 0%;
 }
-
 .fonctionnement__choix i {
   margin: 0% 8% 0% 0%;
   color: #9356DC;
 }
-
 .fonctionnement__choix img {
   margin: 0% 8% 0% 0%;
 }
-
 .fonctionnement__choix h2 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -143,6 +129,10 @@ body {
   line-height: 19px;
   color: #353535;
   margin: 6% 0% 6% 0%;
+}
+.fonctionnement a {
+  text-decoration: none;
+  width: 100%;
 }
 
 .restaurants {
@@ -153,7 +143,6 @@ body {
   padding-top: 40px;
   background-color: #F3F3F3;
 }
-
 .restaurants h1 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -162,18 +151,15 @@ body {
   line-height: 29px;
   color: #353535;
 }
-
 .restaurants a {
   text-decoration: none;
   width: 90%;
 }
-
 .restaurants__article {
   width: 100%;
   border-radius: 15px 15px 0px 0px;
   margin-bottom: 20px;
 }
-
 .restaurants__card {
   position: relative;
   display: flex;
@@ -182,7 +168,12 @@ body {
   width: 100%;
   background-color: #FFFFFF;
 }
-
+.restaurants__card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 250px;
+  border-radius: 15px 15px 0px 0px;
+}
 .restaurants__card-new {
   position: absolute;
   top: 10px;
@@ -192,7 +183,6 @@ body {
   border-radius: 2px;
   padding: 5px;
 }
-
 .restaurants__card-new h2 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -203,14 +193,6 @@ body {
   text-align: center;
   margin: 0;
 }
-
-.restaurants__card img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 250px;
-  border-radius: 15px 15px 0px 0px;
-}
-
 .restaurants__card-content {
   display: flex;
   flex-direction: row;
@@ -219,22 +201,18 @@ body {
   background-color: #FFFFFF;
   margin: 2% 5% 10% 5%;
 }
-
 .restaurants__card-content i {
   padding-left: 20%;
 }
-
 .restaurants__card-heart {
   color: #9356DC;
 }
-
 .restaurants__card-text {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin: 0% 0% 0% 0%;
 }
-
 .restaurants__card-text h1 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -244,7 +222,6 @@ body {
   color: #353535;
   margin: 2% 0% 0% 0%;
 }
-
 .restaurants__card-text h3 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -253,4 +230,52 @@ body {
   line-height: 22px;
   color: #353535;
   margin: 1% 0% 0% 0%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #353535;
+  margin-top: 50px;
+  padding: 20px 5% 20px 5%;
+}
+.footer img {
+  color: #FFF;
+  height: 27px;
+  width: 138px;
+}
+.footer__lien {
+  margin-top: 16px;
+}
+.footer__lien a {
+  text-decoration: none;
+  color: #FFF;
+}
+.footer__lien-a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  color: #FFF;
+  margin-bottom: 10px;
+}
+.footer__lien-a a {
+  text-decoration: none;
+  color: #FFF;
+}
+.footer__lien-a i {
+  color: #FFF;
+}
+.footer__lien-a h2 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #353535;
+  margin: 0px 0px 0px 10px;
+  color: #FFF;
 }

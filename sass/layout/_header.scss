@@ -4,26 +4,28 @@
     flex-direction: column;
     align-items: center;
     background-color: #FFFFFF;
-}
-.header img{
-    width:50%;
-    margin:5% 0% 3% 0%;
-}
+    & img{
+        width:50%;
+        margin:5% 0% 3% 0%;
+    }
 
-.header__location{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width:100%;
-    background : $background-color;
-    
-}
-.header__location i{
-    color:#000000;
-    margin-right: 5%;;
-}
+    &__location{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        background : $background-color;
 
-.header__location h2{
-   @include balise_h2();
+        & i{
+            color:#000000;
+            margin-right: 5%;;
+        }
+
+       & h2{
+            @include balise_h2();
+         }
+        
+    }
+
 }

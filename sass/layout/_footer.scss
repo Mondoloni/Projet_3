@@ -1,0 +1,54 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: $font-color;
+    margin-top:50px;
+    padding: 20px 5% 20px 5%;
+    & img{
+        color:#FFF;
+        height: 27px;
+        width:138px;
+    }
+
+    &__lien{
+        margin-top:16px ;
+      
+        & a{
+            text-decoration: none;
+            color: #FFF;
+        }
+        &-a{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: nowrap;
+            width: 100%;
+            color:#FFF;
+            margin-bottom: 10px;
+            & a{
+                text-decoration: none;
+                color: #FFF;
+            }
+            
+            & i{
+                color:#FFF;
+            }
+            
+            & h2{
+                @include balise_h2();
+                margin: 0px 0px 0px 10px; 
+                color: #FFF;
+            }
+        } 
+    }
+    
+    
+    
+   
+    
+}
+
+
+
