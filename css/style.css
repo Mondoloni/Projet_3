@@ -21,6 +21,23 @@
     font-weight: 900;
   }
 }
+@keyframes loader-rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader-fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 /****** General ***********/
 * {
   font-family: "Roboto", sans-serif;
@@ -65,26 +82,9 @@ body {
   border: 5px solid #9356DC;
   border-top-color: transparent;
   animation: loader-rotation 1s linear infinite;
-  animation-duration: 1;
+  animation-duration: 3;
 }
 
-@keyframes loader-rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes loader-fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
 .header {
   display: flex;
   flex-direction: column;
@@ -214,6 +214,16 @@ body {
 }
 .fonctionnement__choix {
   display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .fonctionnement__choix {
+    flex-direction: row;
+  }
+}
+.fonctionnement__choix-lien {
+  display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
@@ -222,14 +232,14 @@ body {
   border-radius: 20px;
   margin: 2% 0% 2% 0%;
 }
-.fonctionnement__choix i {
+.fonctionnement__choix-lien i {
   margin: 0% 8% 0% 0%;
   color: #9356DC;
 }
-.fonctionnement__choix img {
+.fonctionnement__choix-lien img {
   margin: 0% 8% 0% 0%;
 }
-.fonctionnement__choix h2 {
+.fonctionnement__choix-lien h2 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -242,6 +252,11 @@ body {
   text-decoration: none;
   width: 100%;
 }
+@media screen and (min-width: 1024px) {
+  .fonctionnement a {
+    margin-right: 24px;
+  }
+}
 
 .restaurants {
   display: flex;
@@ -250,6 +265,12 @@ body {
   margin: 0px 5% 0px 5%;
   padding-top: 40px;
   background-color: #F3F3F3;
+}
+@media screen and (max-width: 1440px) {
+  .restaurants {
+    width: 75%;
+    margin: 0% 12.5% 0% 12.5%;
+  }
 }
 .restaurants h1 {
   font-family: "Roboto", sans-serif;
@@ -265,14 +286,22 @@ body {
     line-height: normal;
   }
 }
-.restaurants a {
-  text-decoration: none;
-  width: 90%;
-}
-.restaurants__article {
+.restaurants__frame {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.restaurants__frame-article {
+  width: 45%;
   border-radius: 15px 15px 0px 0px;
   margin-bottom: 20px;
+}
+.restaurants__frame-article a {
+  text-decoration: none;
+  width: 90%;
 }
 .restaurants__card {
   position: relative;

@@ -49,24 +49,6 @@ body {
     animation-duration: random($limit: 3);
   }
   
-  @keyframes loader-rotation {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  @keyframes loader-fade-out {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-      visibility: hidden;
-    }
-  }
   
   @import "./utils/_mixins";
   @import "./layout/_header"; 
