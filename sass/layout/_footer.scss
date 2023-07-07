@@ -5,6 +5,13 @@
     background-color: $font-color;
     margin-top:50px;
     padding: 20px 5% 20px 5%;
+    @media screen and (min-width:1440px) {
+        flex-direction: row-reverse;
+        justify-content: end;
+        align-items: center;
+        
+    }
+
     & img{
         color:#FFF;
         height: 27px;
@@ -13,10 +20,21 @@
 
     &__lien{
         margin-top:16px ;
-      
+        @media screen and (min-width:1440px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            width:auto;
+            margin-right:16px;
+        }
         & a{
             text-decoration: none;
             color: #FFF;
+            @media screen and (min-width:1440px) {
+            margin:0% 0.5% 0% 0.5%;
+            // width:100%;
+            }
+
         }
         &-a{
             display: flex;
@@ -24,12 +42,19 @@
             justify-content: flex-start;
             align-items: center;
             flex-wrap: nowrap;
-            width: 100%;
             color:#FFF;
             margin-bottom: 10px;
+            @media screen and (min-width:1440px) {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
             & a{
                 text-decoration: none;
                 color: #FFF;
+                @media screen and (min-width:1440px) {
+                    width:130px;
+                    }
             }
             
             & i{
@@ -40,6 +65,9 @@
                 @include balise_h2();
                 margin: 0px 0px 0px 10px; 
                 color: #FFF;
+                @media screen and (min-width:1440px) {
+                width:170px;
+                }
             }
         } 
     }

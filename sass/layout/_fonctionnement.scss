@@ -4,7 +4,10 @@
     align-items: flex-start;
     padding: 50px 5% 40px 5%;
     background-color: #FFFFFF;
-    
+    @media screen and (min-width:1440px) {
+    width:100%;
+    padding:50px 0% 50px 0%;
+    }
 
     &__choix{
         display:flex;
@@ -12,6 +15,8 @@
         width:100%;
         @media screen and (min-width: 1024px) {
             flex-direction: row;
+            margin:0% 12.5% 0% 12.5%;
+            width:75%;
         }
         &-lien{
             display:flex;
@@ -43,5 +48,11 @@
         @media screen and (min-width: 1024px) {
             margin-right: 24px;
         }
-     }
+       }
+    & h1{
+    @media screen and (min-width: 1024px) {
+        @include balise_h1();
+        margin-left: 12.5%;
+    }
+    }
 }
