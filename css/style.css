@@ -43,6 +43,48 @@ body {
   width: 100%;
 }
 
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: loader-fade-out 3s linear forwards;
+  animation-duration: 3;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid #9356DC;
+  border-top-color: transparent;
+  animation: loader-rotation 1s linear infinite;
+  animation-duration: 1;
+}
+
+@keyframes loader-rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader-fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 .header {
   display: flex;
   flex-direction: column;
@@ -52,6 +94,12 @@ body {
 .header img {
   width: 50%;
   margin: 5% 0% 3% 0%;
+}
+@media screen and (min-width: 1024px) {
+  .header img {
+    width: 200px;
+    margin: 30px 0px 30px 0px;
+  }
 }
 .header__location {
   display: flex;
@@ -64,6 +112,11 @@ body {
 .header__location i {
   color: #000000;
   margin-right: 5%;
+}
+@media screen and (min-width: 1024px) {
+  .header__location i {
+    margin-right: 1%;
+  }
 }
 .header__location h2 {
   font-family: "Roboto", sans-serif;
@@ -98,9 +151,16 @@ body {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   width: 60%;
 }
+@media screen and (min-width: 1024px) {
+  .explorer__submit {
+    width: 218px;
+    margin-top: 18px;
+    margin-bottom: 30px;
+  }
+}
 .explorer__submit:hover {
   opacity: 0.9;
-  animation: bouton-explorer 2000ms ease-in-out 0ms 1 normal forwards running;
+  animation: bouton-explorer 10000ms ease-in-out 0ms 1 normal forwards running;
   cursor: pointer;
 }
 .explorer__submit:not(:hover) {
@@ -113,10 +173,21 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-  color: #353535;
+  color: #000;
   width: 75%;
   text-align: center;
   margin: 10% 0% 0% 0%;
+}
+@media screen and (min-width: 1024px) {
+  .explorer h1 {
+    font-size: 40px;
+    line-height: normal;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .explorer h1 {
+    margin: 30px 0px 0px 0px;
+  }
 }
 .explorer h3 {
   font-family: "Roboto", sans-serif;
@@ -127,6 +198,11 @@ body {
   color: #353535;
   text-align: center;
   margin: 5% 0% 0% 0%;
+}
+@media screen and (min-width: 1024px) {
+  .explorer h3 {
+    margin: 10px 0px 0px 0px;
+  }
 }
 
 .fonctionnement {
@@ -181,7 +257,13 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-  color: #353535;
+  color: #000;
+}
+@media screen and (min-width: 1024px) {
+  .restaurants h1 {
+    font-size: 40px;
+    line-height: normal;
+  }
 }
 .restaurants a {
   text-decoration: none;
@@ -239,7 +321,7 @@ body {
 .restaurants__card-heart:hover {
   animation-name: restaurants-liked;
   animation-duration: 1000ms;
-  animation-timing-function: linear;
+  animation-timing-function: cubic-bezier(0.9, 0, 0.1, 1);
   animation-delay: 3s;
   animation-iteration-count: 1;
   animation-direction: normal;
