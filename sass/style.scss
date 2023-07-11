@@ -36,7 +36,8 @@ body {
     align-items: center;
     z-index: 9999;
     animation: loader-fade-out 3s linear forwards;
-    animation-duration: random($limit: 3);
+    $random:random($limit:3);
+    animation-duration: $random+s;
   }
   
   .loader {
@@ -46,7 +47,8 @@ body {
     border: 5px solid #9356DC; 
     border-top-color: transparent;
     animation: loader-rotation 1s linear infinite;
-    animation-duration: random($limit: 3);
+    $random:random($limit:3);
+    animation-duration: $random+s;
   }
   
   
@@ -56,3 +58,12 @@ body {
   @import "./layout/fonctionnement";
   @import "./layout/restaurants";
   @import "./layout/footer";
+  
+
+  /****** Style des pages des restaurants****/
+  .main-resto {
+    width: 100%;
+    background: var(--white, #FFF);
+ }
+  @import "./layout/header-resto";
+  @import "./layout/_menu-resto";
