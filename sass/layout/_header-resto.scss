@@ -35,9 +35,15 @@
 
     &__photo{
         width:100%;
+        position: relative;
         & img{
             height:275px;
             object-fit: cover;
+//             position: relative;
+  
+ 
+// z-index: 1;
+
         }
         
     }

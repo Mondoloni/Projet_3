@@ -62,8 +62,16 @@ body {
 
   /****** Style des pages des restaurants****/
   .main-resto {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     background: var(--white, #FFF);
+    height: auto;
+   
  }
+
+ .content {
+  flex: 1; 
+}
   @import "./layout/header-resto";
   @import "./layout/_menu-resto";
