@@ -38,6 +38,14 @@
     visibility: hidden;
   }
 }
+@keyframes menus-load {
+  0% {
+    transform: translate(-9999px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
 /****** General ***********/
 * {
   font-family: "Roboto", sans-serif;
@@ -584,13 +592,15 @@ body {
 .menu__titre i {
   margin: 8px 15px 0px 70px;
 }
-.menu__section {
+.menu__section--1 {
+  animation: menus-load 5s forwards 1 normal ease-in-out;
+  animation-delay: 500ms;
   display: flex;
   flex-direction: column;
   width: 95%;
   margin: 0 auto;
 }
-.menu__section h3 {
+.menu__section--1 h3 {
   color: #000;
   font-family: Roboto;
   font-size: 16px;
@@ -602,7 +612,7 @@ body {
   width: fit-content;
   margin: 5px 0px 12px 0px;
 }
-.menu__section-card {
+.menu__section--1-card {
   border-radius: 15px;
   background-color: #FFF;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
@@ -612,13 +622,13 @@ body {
   padding: 15px;
   margin-bottom: 12px;
 }
-.menu__section-card-plat {
+.menu__section--1-card-plat {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 80%;
 }
-.menu__section-card-plat h3 {
+.menu__section--1-card-plat h3 {
   font-family: Roboto;
   font-size: 18px;
   font-style: normal;
@@ -627,7 +637,7 @@ body {
   margin: 0px;
   border-bottom: 0px;
 }
-.menu__section-card-plat h4 {
+.menu__section--1-card-plat h4 {
   font-family: Roboto;
   font-size: 15px;
   font-style: normal;
@@ -636,14 +646,156 @@ body {
   margin: 0%;
   width: 75%;
 }
-.menu__section-card-prix {
+.menu__section--1-card-prix {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   padding-top: 6%;
 }
-.menu__section-card-prix h5 {
+.menu__section--1-card-prix h5 {
+  color: #353535;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 15.043px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0%;
+}
+.menu__section--2 {
+  animation: menus-load 5s forwards 1 normal ease-in-out;
+  animation-delay: 1000ms;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 0 auto;
+}
+.menu__section--2 h3 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  border-bottom: 3px solid #99E2D0;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 5px 0px 12px 0px;
+}
+.menu__section--2-card {
+  border-radius: 15px;
+  background-color: #FFF;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 12px;
+}
+.menu__section--2-card-plat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+}
+.menu__section--2-card-plat h3 {
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0px;
+  border-bottom: 0px;
+}
+.menu__section--2-card-plat h4 {
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin: 0%;
+  width: 75%;
+}
+.menu__section--2-card-prix {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 6%;
+}
+.menu__section--2-card-prix h5 {
+  color: #353535;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 15.043px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0%;
+}
+.menu__section--3 {
+  animation: menus-load 5s forwards 1 normal ease-in-out;
+  animation-delay: 1500ms;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 0 auto;
+}
+.menu__section--3 h3 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  border-bottom: 3px solid #99E2D0;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 5px 0px 12px 0px;
+}
+.menu__section--3-card {
+  border-radius: 15px;
+  background-color: #FFF;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 12px;
+}
+.menu__section--3-card-plat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+}
+.menu__section--3-card-plat h3 {
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0px;
+  border-bottom: 0px;
+}
+.menu__section--3-card-plat h4 {
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin: 0%;
+  width: 75%;
+}
+.menu__section--3-card-prix {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 6%;
+}
+.menu__section--3-card-prix h5 {
   color: #353535;
   text-align: center;
   font-family: Roboto;

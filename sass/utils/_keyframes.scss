@@ -44,3 +44,12 @@
       visibility: hidden;
     }
   }
+
+  @keyframes menus-load {
+    0%{
+      transform: translate(-9999px);
+    }
+    100%{
+      transform: translate(0);
+    }
+  }
