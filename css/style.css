@@ -704,16 +704,6 @@ body {
   animation: coche-droite-gauche 800ms ease-in-out forwards;
   display: block;
 }
-.menu__section--1-card:hover .menu__section--1-card-plat h3 {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.menu__section--1-card:hover .menu__section--1-card-plat h4 {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
 .menu__section--1-card:not(:hover) .menu__section--1-card-plat-tick {
   display: block;
   animation: coche-gauche-droite 800ms ease-in-out reverse forwards;
@@ -739,6 +729,9 @@ body {
   margin: 0px;
   border-bottom: 0px;
   width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__section--1-card-plat h4 {
   font-family: Roboto;
@@ -747,6 +740,9 @@ body {
   font-weight: 300;
   line-height: normal;
   margin: 0%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   width: 100%;
 }
 .menu__section--1-card-plat-tick {
@@ -828,16 +824,6 @@ body {
   animation: coche-droite-gauche 800ms ease-in-out forwards;
   display: block;
 }
-.menu__section--2-card:hover .menu__section--2-card-plat h3 {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.menu__section--2-card:hover .menu__section--2-card-plat h4 {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
 .menu__section--2-card:not(:hover) .menu__section--2-card-plat-tick {
   display: block;
   animation: coche-gauche-droite 800ms ease-in-out reverse forwards;
@@ -863,6 +849,9 @@ body {
   margin: 0px;
   border-bottom: 0px;
   width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__section--2-card-plat h4 {
   font-family: Roboto;
@@ -871,6 +860,9 @@ body {
   font-weight: 300;
   line-height: normal;
   margin: 0%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   width: 100%;
 }
 .menu__section--2-card-plat-tick {
@@ -952,16 +944,6 @@ body {
   animation: coche-droite-gauche 800ms ease-in-out forwards;
   display: block;
 }
-.menu__section--3-card:hover .menu__section--3-card-plat h3 {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.menu__section--3-card:hover .menu__section--3-card-plat h4 {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
 .menu__section--3-card:not(:hover) .menu__section--3-card-plat-tick {
   display: block;
   animation: coche-gauche-droite 800ms ease-in-out reverse forwards;
@@ -987,6 +969,9 @@ body {
   margin: 0px;
   border-bottom: 0px;
   width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__section--3-card-plat h4 {
   font-family: Roboto;
@@ -995,6 +980,9 @@ body {
   font-weight: 300;
   line-height: normal;
   margin: 0%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   width: 100%;
 }
 .menu__section--3-card-plat-tick {

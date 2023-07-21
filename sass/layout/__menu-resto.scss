@@ -106,17 +106,6 @@
                         animation: coche-droite-gauche 800ms ease-in-out forwards;
                         display:block;
                     }
-                 
-                    &:hover &-plat h3{
-                        white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                    }
-                    &:hover &-plat h4{
-                        white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                    }
 
                     &:not(:hover) &-plat-tick {
                         display:block;
@@ -143,6 +132,9 @@
                             margin:0px;
                             border-bottom: 0px;
                             width:100%;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
                         }
                         & h4{
                             font-family: Roboto;
@@ -151,6 +143,9 @@
                             font-weight: 300;
                             line-height: normal;
                             margin:0%;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
                             width:100%;
                            
                         }
