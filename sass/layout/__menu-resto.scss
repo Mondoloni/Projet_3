@@ -23,19 +23,12 @@
             width:auto;
         }
         & i{
-            margin:8px 15px 0px 70px;
+            margin:8px 15px 0px 40px;
         }
     }
     &__section
     {
         $anim-delay:500ms;
-        // animation-name: menus-load;
-        // animation-duration: 10s;
-        // animation-timing-function:cubic-bezier(.9,0,.1,1);
-        // animation-iteration-count:1;
-        // animation-direction:normal;
-        // animation-fill-mode:forwards;
-        // animation: menus-load 5s forwards 1 normal ease-in-out;
         @for $i from 1 through 3
         {
             
@@ -66,13 +59,49 @@
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
-                    padding: 15px;
+                    flex-wrap: nowrap;
+                    padding: 0;
                     margin-bottom: 12px;
+                   
+                    &:hover &-plat{
+                        width:65%;
+                    }
+                    &:hover &-plat-tick {
+                        animation: coche-droite-gauche 800ms ease-in-out forwards;
+                        display:block;
+                    }
+                    &:hover &-plat-tick i{
+                        animation: coche-droite-gauche 800ms ease-in-out forwards;
+                        display:block;
+                    }
+                 
+                    &:hover &-plat h3{
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    &:hover &-plat h4{
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
+                    &:not(:hover) &-plat-tick {
+                        display:block;
+                        animation: coche-gauche-droite 800ms ease-in-out reverse forwards;                   
+                    }
+                    &:not(:hover) &-plat-tick i{
+                        display:none;
+                        animation: coche-gauche-droite 800ms ease-in-out reverse forwards;
+                    }
+                                            
                     &-plat{
                         display: flex;
                         flex-direction: column;
+                        align-items: flex-start;
                         justify-content: center;
-                        width:80%;
+                        padding:15px 5px 15px 15px;
+                        width:90%;
                         & h3{
                             font-family: Roboto;
                             font-size: 18px;
@@ -81,6 +110,7 @@
                             line-height: normal;
                             margin:0px;
                             border-bottom: 0px;
+                            width:100%;
                         }
                         & h4{
                             font-family: Roboto;
@@ -89,7 +119,22 @@
                             font-weight: 300;
                             line-height: normal;
                             margin:0%;
-                            width:75%;
+                            width:100%;
+                           
+                        }
+                        &-tick{
+                        border-radius: 0 15px 15px 0;
+                        background-color:#99E2D0 ;
+                        height:69px;
+                        width:15%;
+                        display: none;
+                            & i{
+                                position: absolute;
+                                top: 50%;
+                                left: 40%;
+                                color:#FFF;
+                                display: none;
+                            }
                         }
                     }
                     &-prix{
@@ -97,7 +142,7 @@
                         flex-direction: row;
                         justify-content: flex-start;
                         align-items: center;
-                        padding-top: 6%;
+                        padding: 15px 15px 15px 5px;
                         
                         & h5{
                             color: #353535;

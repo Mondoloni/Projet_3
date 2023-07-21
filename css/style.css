@@ -46,6 +46,27 @@
     transform: translate(0);
   }
 }
+@keyframes coche-droite-gauche {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes coche-gauche-droite {
+  0% {
+    transform: translateX(100%);
+    width: 0%;
+  }
+  50% {
+    width: 8%;
+  }
+  100% {
+    transform: translateX(0%);
+    width: 15%;
+  }
+}
 /****** General ***********/
 * {
   font-family: "Roboto", sans-serif;
@@ -90,7 +111,7 @@ body {
   border: 5px solid #9356DC;
   border-top-color: transparent;
   animation: loader-rotation 1s linear infinite;
-  animation-duration: 1s;
+  animation-duration: 2s;
 }
 
 .header {
@@ -384,7 +405,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #FFFFFF;
-  margin: 2% 5% 10% 5%;
+  margin: 2% 5% 5% 5%;
 }
 .restaurants__card-content i {
   padding-left: 20%;
@@ -562,6 +583,7 @@ body {
   height: 275px;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
 }
 
 .menu {
@@ -590,7 +612,7 @@ body {
   width: auto;
 }
 .menu__titre i {
-  margin: 8px 15px 0px 70px;
+  margin: 8px 15px 0px 40px;
 }
 .menu__section--1 {
   animation: menus-load 5s forwards 1 normal ease-in-out;
@@ -619,14 +641,46 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 15px;
+  flex-wrap: nowrap;
+  padding: 0;
   margin-bottom: 12px;
+}
+.menu__section--1-card:hover .menu__section--1-card-plat {
+  width: 65%;
+}
+.menu__section--1-card:hover .menu__section--1-card-plat-tick {
+  animation: coche-droite-gauche 800ms ease-in-out forwards;
+  display: block;
+}
+.menu__section--1-card:hover .menu__section--1-card-plat-tick i {
+  animation: coche-droite-gauche 800ms ease-in-out forwards;
+  display: block;
+}
+.menu__section--1-card:hover .menu__section--1-card-plat h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__section--1-card:hover .menu__section--1-card-plat h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__section--1-card:not(:hover) .menu__section--1-card-plat-tick {
+  display: block;
+  animation: coche-gauche-droite 800ms ease-in-out reverse forwards;
+}
+.menu__section--1-card:not(:hover) .menu__section--1-card-plat-tick i {
+  display: none;
+  animation: coche-gauche-droite 800ms ease-in-out reverse forwards;
 }
 .menu__section--1-card-plat {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-  width: 80%;
+  padding: 15px 5px 15px 15px;
+  width: 90%;
 }
 .menu__section--1-card-plat h3 {
   font-family: Roboto;
@@ -636,6 +690,7 @@ body {
   line-height: normal;
   margin: 0px;
   border-bottom: 0px;
+  width: 100%;
 }
 .menu__section--1-card-plat h4 {
   font-family: Roboto;
@@ -644,14 +699,28 @@ body {
   font-weight: 300;
   line-height: normal;
   margin: 0%;
-  width: 75%;
+  width: 100%;
+}
+.menu__section--1-card-plat-tick {
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  height: 69px;
+  width: 15%;
+  display: none;
+}
+.menu__section--1-card-plat-tick i {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  color: #FFF;
+  display: none;
 }
 .menu__section--1-card-prix {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 6%;
+  padding: 15px 15px 15px 5px;
 }
 .menu__section--1-card-prix h5 {
   color: #353535;
@@ -690,14 +759,46 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 15px;
+  flex-wrap: nowrap;
+  padding: 0;
   margin-bottom: 12px;
+}
+.menu__section--2-card:hover .menu__section--2-card-plat {
+  width: 65%;
+}
+.menu__section--2-card:hover .menu__section--2-card-plat-tick {
+  animation: coche-droite-gauche 800ms ease-in-out forwards;
+  display: block;
+}
+.menu__section--2-card:hover .menu__section--2-card-plat-tick i {
+  animation: coche-droite-gauche 800ms ease-in-out forwards;
+  display: block;
+}
+.menu__section--2-card:hover .menu__section--2-card-plat h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__section--2-card:hover .menu__section--2-card-plat h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__section--2-card:not(:hover) .menu__section--2-card-plat-tick {
+  display: block;
+  animation: coche-gauche-droite 800ms ease-in-out reverse forwards;
+}
+.menu__section--2-card:not(:hover) .menu__section--2-card-plat-tick i {
+  display: none;
+  animation: coche-gauche-droite 800ms ease-in-out reverse forwards;
 }
 .menu__section--2-card-plat {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-  width: 80%;
+  padding: 15px 5px 15px 15px;
+  width: 90%;
 }
 .menu__section--2-card-plat h3 {
   font-family: Roboto;
@@ -707,6 +808,7 @@ body {
   line-height: normal;
   margin: 0px;
   border-bottom: 0px;
+  width: 100%;
 }
 .menu__section--2-card-plat h4 {
   font-family: Roboto;
@@ -715,14 +817,28 @@ body {
   font-weight: 300;
   line-height: normal;
   margin: 0%;
-  width: 75%;
+  width: 100%;
+}
+.menu__section--2-card-plat-tick {
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  height: 69px;
+  width: 15%;
+  display: none;
+}
+.menu__section--2-card-plat-tick i {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  color: #FFF;
+  display: none;
 }
 .menu__section--2-card-prix {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 6%;
+  padding: 15px 15px 15px 5px;
 }
 .menu__section--2-card-prix h5 {
   color: #353535;
@@ -761,14 +877,46 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 15px;
+  flex-wrap: nowrap;
+  padding: 0;
   margin-bottom: 12px;
+}
+.menu__section--3-card:hover .menu__section--3-card-plat {
+  width: 65%;
+}
+.menu__section--3-card:hover .menu__section--3-card-plat-tick {
+  animation: coche-droite-gauche 800ms ease-in-out forwards;
+  display: block;
+}
+.menu__section--3-card:hover .menu__section--3-card-plat-tick i {
+  animation: coche-droite-gauche 800ms ease-in-out forwards;
+  display: block;
+}
+.menu__section--3-card:hover .menu__section--3-card-plat h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__section--3-card:hover .menu__section--3-card-plat h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__section--3-card:not(:hover) .menu__section--3-card-plat-tick {
+  display: block;
+  animation: coche-gauche-droite 800ms ease-in-out reverse forwards;
+}
+.menu__section--3-card:not(:hover) .menu__section--3-card-plat-tick i {
+  display: none;
+  animation: coche-gauche-droite 800ms ease-in-out reverse forwards;
 }
 .menu__section--3-card-plat {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-  width: 80%;
+  padding: 15px 5px 15px 15px;
+  width: 90%;
 }
 .menu__section--3-card-plat h3 {
   font-family: Roboto;
@@ -778,6 +926,7 @@ body {
   line-height: normal;
   margin: 0px;
   border-bottom: 0px;
+  width: 100%;
 }
 .menu__section--3-card-plat h4 {
   font-family: Roboto;
@@ -786,14 +935,28 @@ body {
   font-weight: 300;
   line-height: normal;
   margin: 0%;
-  width: 75%;
+  width: 100%;
+}
+.menu__section--3-card-plat-tick {
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  height: 69px;
+  width: 15%;
+  display: none;
+}
+.menu__section--3-card-plat-tick i {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  color: #FFF;
+  display: none;
 }
 .menu__section--3-card-prix {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 6%;
+  padding: 15px 15px 15px 5px;
 }
 .menu__section--3-card-prix h5 {
   color: #353535;

@@ -53,3 +53,30 @@
       transform: translate(0);
     }
   }
+
+  @keyframes coche-droite-gauche {
+    0%{
+      transform: translateX(100%);
+      
+    }
+    100%{
+      transform: translateX(0%);
+      // display:block;
+    }
+  }
+
+  @keyframes coche-gauche-droite {
+    0%{
+      transform: translateX(100%);
+      width:0%;
+     
+    }
+    50%{
+      width:8%;
+    }
+    100%{
+      transform: translateX(0%);
+      width:15%;
+    }
+  }
+
