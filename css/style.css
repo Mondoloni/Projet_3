@@ -111,7 +111,7 @@ body {
   border: 5px solid #9356DC;
   border-top-color: transparent;
   animation: loader-rotation 1s linear infinite;
-  animation-duration: 1s;
+  animation-duration: 2s;
 }
 
 .header {
@@ -574,6 +574,12 @@ body {
   text-align: center;
   margin: 14px 23% 13px 11%;
   width: 55%;
+}
+@media screen and (min-width: 1440px) {
+  .header-resto__logo h1 {
+    width: 100%;
+    margin: 14px 0px 13px 0px;
+  }
 }
 .header-resto__photo {
   width: 100%;
