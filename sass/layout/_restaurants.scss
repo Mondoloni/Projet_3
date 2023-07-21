@@ -92,9 +92,6 @@
                 animation-iteration-count:1;
                 animation-direction:normal;
                 animation-fill-mode:forwards;
-                // animation-play-state:running;
-                //  animation: restaurants-liked 8s ease-in-out 0ms 1 normal forwards running;
-       
             }
             &:not(:hover){
                 animation: restaurants-liked 3000ms ease-in-out 0ms 1 reverse forwards running;
