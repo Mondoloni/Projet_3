@@ -101,7 +101,7 @@ body {
   align-items: center;
   z-index: 9999;
   animation: loader-fade-out 3s linear forwards;
-  animation-duration: 1s;
+  animation-duration: 3s;
 }
 
 .loader {
@@ -629,6 +629,12 @@ body {
   font-weight: 400;
   line-height: normal;
   width: auto;
+  margin-top: 0px;
+}
+@media screen and (min-width: 1440px) {
+  .menu__titre h2 {
+    margin-top: 20px;
+  }
 }
 .menu__titre-heart {
   color: #9356DC;
@@ -652,7 +658,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 95%;
-  margin: 0 auto;
+  margin: 30px auto 0px auto;
 }
 @media screen and (min-width: 1440px) {
   .menu__section--1 {
@@ -776,7 +782,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 95%;
-  margin: 0 auto;
+  margin: 30px auto 0px auto;
 }
 @media screen and (min-width: 1440px) {
   .menu__section--2 {
@@ -900,7 +906,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 95%;
-  margin: 0 auto;
+  margin: 30px auto 0px auto;
 }
 @media screen and (min-width: 1440px) {
   .menu__section--3 {
