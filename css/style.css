@@ -4,10 +4,32 @@
     background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   }
+  50% {
+    background-position: 50% 50%;
+    background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  }
   100% {
     background-position: 0% 50%;
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(182deg, #9356DC 0%, #FF79DA 100%);
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes bouton-explorer-rev {
+  0% {
+    background-position: 0% 50%;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(182deg, #9356DC 0%, #FF79DA 100%);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  }
+  50% {
+    background-position: 50% 50%;
+    background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    background-position: 100% 50%;
+    background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   }
 }
 @keyframes restaurants-liked {
@@ -101,7 +123,7 @@ body {
   align-items: center;
   z-index: 9999;
   animation: loader-fade-out 3s linear forwards;
-  animation-duration: 2s;
+  animation-duration: 3s;
 }
 
 .loader {
@@ -176,6 +198,7 @@ body {
   color: #FFFFFF;
   margin-top: 5%;
   margin-bottom: 10%;
+  border: transparent;
   background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   width: 60%;
@@ -188,13 +211,11 @@ body {
   }
 }
 .explorer__submit:hover {
-  opacity: 0.9;
-  animation: bouton-explorer 10000ms ease-in-out 0ms 1 normal forwards running;
+  animation: bouton-explorer 1s linear 0s 1 normal forwards;
   cursor: pointer;
 }
 .explorer__submit:not(:hover) {
-  opacity: 1;
-  animation: bouton-explorer 300ms ease-in-out 0ms 1 reverse forwards running;
+  animation: bouton-explorer-rev 1s linear 0s 1 normal forwards;
 }
 .explorer h1 {
   font-family: "Roboto", sans-serif;
@@ -271,10 +292,18 @@ body {
 }
 .fonctionnement__choix-lien i {
   margin: 0% 8% 0% 0%;
+  color: #7E7E7E;
+}
+.fonctionnement__choix-lien .fa-colored {
   color: #9356DC;
 }
 .fonctionnement__choix-lien img {
-  margin: 0% 8% 0% 0%;
+  margin: 0% 8% 0% -3%;
+}
+@media screen and (min-width: 1024px) {
+  .fonctionnement__choix-lien img {
+    margin: 0% 8% 0% -4%;
+  }
 }
 .fonctionnement__choix-lien h2 {
   font-family: "Roboto", sans-serif;
@@ -1034,6 +1063,7 @@ body {
   color: #FFFFFF;
   margin-top: 5%;
   margin-bottom: 10%;
+  border: transparent;
   background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   width: 50%;

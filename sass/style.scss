@@ -25,7 +25,7 @@ body {
  }
 
  .loader-overlay {
-    position: fixed;
+    position: fixed; //Posiion fixe par rapport à la fenêtre
     top: 0;
     left: 0;
     width: 100%;
@@ -34,7 +34,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999;
+    z-index: 9999; // Position au-dessus
     animation: loader-fade-out 3s linear forwards;
     $random:random($limit:3);
     animation-duration: $random+s;

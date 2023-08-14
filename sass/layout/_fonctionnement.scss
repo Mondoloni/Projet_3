@@ -29,11 +29,21 @@
             margin: 2% 0% 2% 0%;
             & i{
                 margin:0% 8% 0% 0%;
-                color:$primary-color;
+                // color:$primary-color;
+                color:#7E7E7E;
+               
+            }
+            .fa-colored{
+                color:$primary-color;  
             }
 
             & img{
-                margin:0% 8% 0% 0%;
+                margin:0% 8% 0% -3%;
+                @media screen and (min-width: 1024px)
+                {
+                    margin:0% 8% 0% -4%;
+                }
+        
             }
             & h2{
                 @include balise_h2();
