@@ -8,14 +8,15 @@
     &__submit{
         @include button();
         width:60%;
-
+        animation-name: bouton-explorer;
+        animation-play-state: paused;
         &:hover{
-            animation:bouton-explorer 1s linear 0s 1 normal forwards;
+            animation:bouton-explorer 1s linear 0s 1 normal forwards running;
             cursor: pointer;
         }
 
         &:not(:hover){
-            animation:bouton-explorer-rev 1s linear 0s 1 normal forwards;
+            animation:bouton-explorer-rev 1s linear 0s 1 normal forwards running;
         }
     }
 
