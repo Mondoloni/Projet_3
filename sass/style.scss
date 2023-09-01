@@ -35,7 +35,7 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 9999; // Position au-dessus
-    animation: loader-fade-out 3s linear forwards;
+    animation: loader-fade-out 1.5s linear forwards;
     $random:random($limit:3);
     animation-duration: $random+s;
   }

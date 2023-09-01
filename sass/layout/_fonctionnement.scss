@@ -2,11 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 50px 5% 40px 5%;
+    padding: 20px 5% 40px 5%;
     background-color: #FFFFFF;
     @media screen and (min-width:1440px) {
     width:100%;
-    padding:50px 0% 50px 0%;
     }
 
     &__choix{
@@ -19,6 +18,7 @@
             width:75%;
         }
         &-lien{
+            width: 100%;
             display:flex;
             flex-direction: row;
             justify-content:flex-start;
@@ -27,23 +27,22 @@
             background-color: #F3F3F3;
             border-radius: 20px;
             margin: 2% 0% 2% 0%;
+            @media screen and (min-width: 1024px) {
+                        margin-right: 24px;
+                    }
             & i{
                 margin:0% 8% 0% 0%;
-                // color:$primary-color;
-                color:#7E7E7E;
-               
+                color:#7E7E7E;      
             }
             .fa-colored{
                 color:$primary-color;  
             }
-
             & img{
                 margin:0% 8% 0% -3%;
-                // @media screen and (min-width: 1024px)
-                // {
-                //     margin:0% 8% 0% -3%;
-                // }
-        
+                @media screen and (min-width: 820px) and (max-width:1200px)
+                {
+                    margin:0% 8% 0% -2%;
+                }
             }
             & h2{
                 @include balise_h2();
@@ -51,18 +50,10 @@
             }
         }    
     }
-
-    & a{
-        text-decoration: none;
-        width:100%;
-        @media screen and (min-width: 1024px) {
-            margin-right: 24px;
-        }
-       }
     & h1{
     @media screen and (min-width: 1024px) {
         @include balise_h1();
         margin-left: 12.5%;
-    }
+        }
     }
 }

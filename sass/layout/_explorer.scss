@@ -8,34 +8,28 @@
     &__submit{
         @include button();
         width:60%;
-        animation-name: bouton-explorer;
-        animation-play-state: paused;
+        transition: all 0.5s ease-in-out; 
         &:hover{
-            animation:bouton-explorer 1s linear 0s 1 normal forwards running;
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
             cursor: pointer;
         }
-
-        &:not(:hover){
-            animation:bouton-explorer-rev 1s linear 0s 1 normal forwards running;
-        }
     }
-
     & h1{
         @include balise_h1();
         width:75%;
         text-align:center;
         margin:10% 0% 0% 0%;
         @media screen and (min-width: 1024px) {
-            margin:30px 0px 0px 0px;
+            margin:30px 0px 20px 0px;
         }
     }
-
     & h3{
         @include balise_h3();
         text-align: center;
         margin:5% 0% 0% 0%;
         @media screen and (min-width: 1024px) {
-        margin:10px 0px 0px 0px;
+        margin:10px 0px 20px 0px;
         }
     }
 }
