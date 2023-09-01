@@ -78,7 +78,7 @@ body {
   align-items: center;
   z-index: 9999;
   animation: loader-fade-out 1.5s linear forwards;
-  animation-duration: 3s;
+  animation-duration: 1s;
 }
 
 .loader {
@@ -88,7 +88,7 @@ body {
   border: 5px solid #9356DC;
   border-top-color: transparent;
   animation: loader-rotation 1s linear infinite;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 
 .header {
@@ -230,6 +230,7 @@ body {
   .fonctionnement__choix {
     flex-direction: row;
     margin: 0% 12.5% 0% 12.5%;
+    justify-content: space-between;
     width: 75%;
   }
 }
@@ -247,6 +248,7 @@ body {
 @media screen and (min-width: 1024px) {
   .fonctionnement__choix-lien {
     margin-right: 24px;
+    width: 32%;
   }
 }
 .fonctionnement__choix-lien i {

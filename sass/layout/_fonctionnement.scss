@@ -15,6 +15,7 @@
         @media screen and (min-width: 1024px) {
             flex-direction: row;
             margin:0% 12.5% 0% 12.5%;
+            justify-content: space-between;
             width:75%;
         }
         &-lien{
@@ -29,6 +30,7 @@
             margin: 2% 0% 2% 0%;
             @media screen and (min-width: 1024px) {
                         margin-right: 24px;
+                        width: 32%;
                     }
             & i{
                 margin:0% 8% 0% 0%;
