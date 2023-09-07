@@ -97,11 +97,7 @@
         {    
             &--#{$i}
             {
-                // transform: translate(-9999px);
-                // position:relative;
-                // left: -2000px;
                 opacity:0;
-                // visibility: hidden;
                 
                 animation: menus-load 3s forwards 1 normal ease-in-out;
                 animation-delay: $anim-delay * $i;

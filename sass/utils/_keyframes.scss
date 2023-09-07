@@ -20,9 +20,7 @@
   @keyframes menus-load {
     0%{
       transform: translate(-2000px);
-      // opacity: 1;
-      // transform: translate(0px);
-      // position:fixed;
+      opacity: 0;
     }
     5%{
       opacity:1;
@@ -30,8 +28,6 @@
     100%{
       transform: translate(0px);
       opacity: 1;
-      // transform: translate(2000px);
-      // position:fixed;
     }
   }
 
