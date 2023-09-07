@@ -75,7 +75,7 @@ body {
   border: 5px solid #9356DC;
   border-top-color: transparent;
   animation: loader-rotation 1s linear infinite;
-  animation-duration: 1s;
+  animation-duration: 2s;
 }
 
 .header {
@@ -674,7 +674,6 @@ body {
   transition: all 0.5s;
 }
 .menu__section--1 {
-  transform: translate(-9999px);
   animation: menus-load 3s forwards 1 normal ease-in-out;
   animation-delay: 500ms;
   display: flex;
@@ -787,7 +786,6 @@ body {
   margin: 0%;
 }
 .menu__section--2 {
-  transform: translate(-9999px);
   animation: menus-load 3s forwards 1 normal ease-in-out;
   animation-delay: 1000ms;
   display: flex;
@@ -900,7 +898,6 @@ body {
   margin: 0%;
 }
 .menu__section--3 {
-  transform: translate(-9999px);
   animation: menus-load 3s forwards 1 normal ease-in-out;
   animation-delay: 1500ms;
   display: flex;
