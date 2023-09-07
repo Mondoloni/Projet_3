@@ -31,19 +31,6 @@
     transform: translateX(0%);
   }
 }
-@keyframes coche-gauche-droite {
-  0% {
-    transform: translateX(100%);
-    width: 0%;
-  }
-  50% {
-    width: 8%;
-  }
-  100% {
-    transform: translateX(0%);
-    width: 150;
-  }
-}
 /****** General ***********/
 * {
   font-family: "Roboto", sans-serif;
@@ -686,10 +673,8 @@ body {
   font-size: 25px;
   transition: all 0.5s;
 }
-.menu__section {
-  transform: translate(-9999px);
-}
 .menu__section--1 {
+  transform: translate(-9999px);
   animation: menus-load 3s forwards 1 normal ease-in-out;
   animation-delay: 500ms;
   display: flex;
@@ -725,7 +710,6 @@ body {
   flex-wrap: nowrap;
   margin-bottom: 12px;
   animation: coche-droite-gauche 0s paused;
-  animation: coche-gauche-droite 0s paused;
 }
 .menu__section--1-card:hover .menu__section--1-card-plat-tick {
   width: 10%;
@@ -803,6 +787,7 @@ body {
   margin: 0%;
 }
 .menu__section--2 {
+  transform: translate(-9999px);
   animation: menus-load 3s forwards 1 normal ease-in-out;
   animation-delay: 1000ms;
   display: flex;
@@ -838,7 +823,6 @@ body {
   flex-wrap: nowrap;
   margin-bottom: 12px;
   animation: coche-droite-gauche 0s paused;
-  animation: coche-gauche-droite 0s paused;
 }
 .menu__section--2-card:hover .menu__section--2-card-plat-tick {
   width: 10%;
@@ -916,6 +900,7 @@ body {
   margin: 0%;
 }
 .menu__section--3 {
+  transform: translate(-9999px);
   animation: menus-load 3s forwards 1 normal ease-in-out;
   animation-delay: 1500ms;
   display: flex;
@@ -951,7 +936,6 @@ body {
   flex-wrap: nowrap;
   margin-bottom: 12px;
   animation: coche-droite-gauche 0s paused;
-  animation: coche-gauche-droite 0s paused;
 }
 .menu__section--3-card:hover .menu__section--3-card-plat-tick {
   width: 10%;

@@ -91,11 +91,11 @@
     &__section
     {
         $anim-delay:500ms;
-        transform: translate(-9999px);
         @for $i from 1 through 3
         {    
             &--#{$i}
             {
+                transform: translate(-9999px);
                 animation: menus-load 3s forwards 1 normal ease-in-out;
                 animation-delay: $anim-delay * $i;
                 display: flex;
@@ -127,7 +127,7 @@
                     flex-wrap: nowrap;
                     margin-bottom: 12px;
                     animation: coche-droite-gauche 0s paused;
-                    animation: coche-gauche-droite 0s paused;
+                    // animation: coche-gauche-droite 0s paused;
                     &:hover &-plat-tick {
                         width:10%;
                     }

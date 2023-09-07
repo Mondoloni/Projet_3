@@ -36,20 +36,20 @@
     }
   }
 
-  @keyframes coche-gauche-droite {
-    0%{
-      transform: translateX(100%);
-      width:0%;
+  // @keyframes coche-gauche-droite {
+  //   0%{
+  //     transform: translateX(100%);
+  //     width:0%;
      
-    }
-    50%{
-      width:8%;
-    }
-    100%{
-      transform: translateX(0%);
-      width:150;
-    }
-  }
+  //   }
+  //   50%{
+  //     width:8%;
+  //   }
+  //   100%{
+  //     transform: translateX(0%);
+  //     width:150;
+  //   }
+  // }
 
 // @keyframes bouton-explorer{
 //         0% {
