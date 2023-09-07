@@ -19,10 +19,19 @@
 
   @keyframes menus-load {
     0%{
-      transform: translate(-9999px);
+      transform: translate(-2000px);
+      // opacity: 1;
+      // transform: translate(0px);
+      // position:fixed;
+    }
+    5%{
+      opacity:1;
     }
     100%{
-      transform: translate(0);
+      transform: translate(0px);
+      opacity: 1;
+      // transform: translate(2000px);
+      // position:fixed;
     }
   }
 
@@ -33,6 +42,19 @@
     }
     100%{
       transform: translateX(0%);
+    }
+  }
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    50%{
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0px);
     }
   }
 

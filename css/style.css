@@ -17,10 +17,14 @@
 }
 @keyframes menus-load {
   0% {
-    transform: translate(-9999px);
+    transform: translate(-2000px);
+  }
+  5% {
+    opacity: 1;
   }
   100% {
-    transform: translate(0);
+    transform: translate(0px);
+    opacity: 1;
   }
 }
 @keyframes coche-droite-gauche {
@@ -29,6 +33,18 @@
   }
   100% {
     transform: translateX(0%);
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px);
   }
 }
 /****** General ***********/
@@ -674,7 +690,7 @@ body {
   transition: all 0.5s;
 }
 .menu__section--1 {
-  transform: translate(-9999px);
+  opacity: 0;
   animation: menus-load 3s forwards 1 normal ease-in-out;
   animation-delay: 500ms;
   display: flex;
@@ -787,7 +803,7 @@ body {
   margin: 0%;
 }
 .menu__section--2 {
-  transform: translate(-9999px);
+  opacity: 0;
   animation: menus-load 3s forwards 1 normal ease-in-out;
   animation-delay: 1000ms;
   display: flex;
@@ -900,7 +916,7 @@ body {
   margin: 0%;
 }
 .menu__section--3 {
-  transform: translate(-9999px);
+  opacity: 0;
   animation: menus-load 3s forwards 1 normal ease-in-out;
   animation-delay: 1500ms;
   display: flex;

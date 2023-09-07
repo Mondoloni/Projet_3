@@ -90,12 +90,19 @@
     }
     &__section
     {
+        
         $anim-delay:500ms;
+       
         @for $i from 1 through 3
         {    
             &--#{$i}
             {
-                transform: translate(-9999px);
+                // transform: translate(-9999px);
+                // position:relative;
+                // left: -2000px;
+                opacity:0;
+                // visibility: hidden;
+                
                 animation: menus-load 3s forwards 1 normal ease-in-out;
                 animation-delay: $anim-delay * $i;
                 display: flex;
